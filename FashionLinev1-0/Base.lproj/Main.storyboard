@@ -10,13 +10,29 @@
         <!--Kombin Oluştur!-->
         <scene sceneID="Ep0-q3-MQb">
             <objects>
-                <viewController id="sL6-bw-qyq" sceneMemberID="viewController">
+                <viewController id="sL6-bw-qyq" customClass="KombinOlustur" customModule="FashionLinev1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nOW-yU-mk9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kombin Oluştur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLc-dz-eQ7">
-                                <rect key="frame" x="152" y="240" width="118" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Line 1" translatesAutoresizingMaskIntoConstraints="NO" id="Zrp-YU-Yhc">
+                                <rect key="frame" x="16" y="103" width="326" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gv0-Kd-0pF">
+                                <rect key="frame" x="313" y="71" width="29" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ProfileIcon"/>
+                                <connections>
+                                    <action selector="profileButtonClicked:" destination="XeR-FL-2fc" eventType="touchUpInside" id="aGT-bq-FEh"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Large Title" translatesAutoresizingMaskIntoConstraints="NO" id="bNq-BK-tvr">
+                                <rect key="frame" x="27" y="57" width="235" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kombin Oluştur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37W-i1-ygj">
+                                <rect key="frame" x="166" y="282" width="118" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -30,7 +46,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVs-Uj-cCM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1554" y="1032"/>
+            <point key="canvasLocation" x="-615.20000000000005" y="1031.3343328335832"/>
+        </scene>
+        <!--Kombin Yorumlat-->
+        <scene sceneID="EeJ-hW-vqh">
+            <objects>
+                <viewController id="mF5-1A-EZe" customClass="KombinYorumlat" customModule="FashionLinev1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W9g-Lz-imq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kombin Yorumlat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn2-i2-Gra">
+                                <rect key="frame" x="122" y="289" width="130" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zNN-09-Ys0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JPz-vw-UcI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhV-C5-512" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2400.8000000000002" y="1029.5352323838081"/>
         </scene>
         <!--Gündem-->
         <scene sceneID="sFF-hi-2dF">
@@ -41,21 +82,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Line 1" translatesAutoresizingMaskIntoConstraints="NO" id="WR5-2s-aBJ">
-                                <rect key="frame" x="20" y="109" width="326" height="13"/>
+                                <rect key="frame" x="24" y="100" width="326" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Large Title" translatesAutoresizingMaskIntoConstraints="NO" id="f5C-CR-zpf">
                                 <rect key="frame" x="28" y="56" width="235" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="va1-eO-pQ1">
-                                <rect key="frame" x="311" y="75" width="29" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="ProfileIcon"/>
-                                <connections>
-                                    <segue destination="fjA-aM-GQs" kind="show" id="I85-OB-WV8"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Large Title1" translatesAutoresizingMaskIntoConstraints="NO" id="hS5-hk-Csf">
                                 <rect key="frame" x="16" y="144" width="219" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,6 +101,9 @@
                                 <rect key="frame" x="299" y="144" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="add"/>
+                                <connections>
+                                    <action selector="kombinOlusturClicked:" destination="XeR-FL-2fc" eventType="touchUpInside" id="vYy-CQ-KyG"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kıyafet Sat" translatesAutoresizingMaskIntoConstraints="NO" id="qdj-ID-JC5">
                                 <rect key="frame" x="274" y="337" width="72" height="18"/>
@@ -91,15 +127,23 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kombinolustur" translatesAutoresizingMaskIntoConstraints="NO" id="bjG-hs-KnJ">
-                                <rect key="frame" x="67" y="399" width="240" height="128"/>
+                                <rect key="frame" x="67" y="341" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PDu-Rl-2Az">
-                                <rect key="frame" x="67" y="535" width="240" height="34"/>
+                                <rect key="frame" x="63" y="501" width="240" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="va1-eO-pQ1">
+                                <rect key="frame" x="317" y="70" width="29" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ProfileIcon"/>
+                                <connections>
+                                    <action selector="profileButtonClicked:" destination="XeR-FL-2fc" eventType="touchUpInside" id="nlw-17-MIi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="iGN-CQ-zp5"/>
@@ -109,11 +153,13 @@
                         <outlet property="commentText" destination="PDu-Rl-2Az" id="r4B-89-nqg"/>
                         <outlet property="imageView" destination="bjG-hs-KnJ" id="jr0-hA-KYu"/>
                         <outlet property="uploadButton" destination="ZJD-a4-Y2Y" id="P1r-4u-18M"/>
+                        <segue destination="fjA-aM-GQs" kind="presentation" identifier="toSignUpViewController" id="OB2-Q4-Di2"/>
+                        <segue destination="mF5-1A-EZe" kind="presentation" identifier="toKombinYorumlat" modalPresentationStyle="fullScreen" id="gmH-qO-Fg4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJc-jA-pEj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2362.4000000000001" y="1030.4347826086957"/>
+            <point key="canvasLocation" x="-1423.2" y="1030.4347826086957"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="G6x-0S-jy8">
@@ -138,7 +184,7 @@
         <!--Gardırop-->
         <scene sceneID="tKM-9T-lyM">
             <objects>
-                <viewController id="dr0-b2-Td4" sceneMemberID="viewController">
+                <viewController id="dr0-b2-Td4" customClass="Gardirobum" customModule="FashionLinev1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yda-Lr-56z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,26 +205,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y2M-ps-2xX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-799.20000000000005" y="1030.4347826086957"/>
+            <point key="canvasLocation" x="140" y="1030.4347826086957"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="rzF-WC-ISg">
             <objects>
-                <viewController id="fjA-aM-GQs" sceneMemberID="viewController">
+                <viewController id="fjA-aM-GQs" customClass="SignUpViewController" customModule="FashionLinev1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lgs-tv-Snu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASR-9B-AQI">
-                                <rect key="frame" x="136" y="357" width="103" height="37"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="JgH-2d-xMe"/>
-                                </constraints>
-                                <state key="normal" title="Kaydol"/>
-                                <connections>
-                                    <action selector="signUpClicked:" destination="EI4-yH-igg" eventType="touchUpInside" id="EBi-yB-toB"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Line 1" translatesAutoresizingMaskIntoConstraints="NO" id="7NW-pz-Aas">
                                 <rect key="frame" x="24" y="99" width="326" height="13"/>
                                 <constraints>
@@ -211,6 +247,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASR-9B-AQI">
+                                <rect key="frame" x="63" y="366" width="103" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="JgH-2d-xMe"/>
+                                </constraints>
+                                <state key="normal" title="Kaydol"/>
+                                <connections>
+                                    <action selector="signUpClicked:" destination="EI4-yH-igg" eventType="touchUpInside" id="EBi-yB-toB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -242,8 +288,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJo-YP-zqt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="EI4-yH-igg" userLabel="Exit" sceneMemberID="exit"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Large Title" id="nXW-sX-qWT">
+                    <rect key="frame" x="0.0" y="0.0" width="235" height="57"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </objects>
-            <point key="canvasLocation" x="-2362" y="1912"/>
+            <point key="canvasLocation" x="-2362" y="1916"/>
         </scene>
     </scenes>
     <resources>

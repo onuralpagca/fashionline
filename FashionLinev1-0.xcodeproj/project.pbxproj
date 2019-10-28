@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		5D0897E5234CD95A0036CC9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0897E3234CD95A0036CC9A /* Main.storyboard */; };
 		5D0897E7234CD95B0036CC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0897E6234CD95B0036CC9A /* Assets.xcassets */; };
 		5D0897EA234CD95B0036CC9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0897E8234CD95B0036CC9A /* LaunchScreen.storyboard */; };
+		5D126410236796A400A7E5B7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D12640F236796A400A7E5B7 /* SignUpViewController.swift */; };
+		5D12641223679C1F00A7E5B7 /* KombinOlustur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D12641123679C1F00A7E5B7 /* KombinOlustur.swift */; };
+		5D12641423679C6B00A7E5B7 /* Gardirobum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D12641323679C6B00A7E5B7 /* Gardirobum.swift */; };
+		5D1264162367A07C00A7E5B7 /* KombinYorumlat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1264152367A07C00A7E5B7 /* KombinYorumlat.swift */; };
 		5D615134235B35EF0011609A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D615133235B35EF0011609A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		5D0897E6234CD95B0036CC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D0897E9234CD95B0036CC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D0897EB234CD95B0036CC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D12640F236796A400A7E5B7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5D12641123679C1F00A7E5B7 /* KombinOlustur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KombinOlustur.swift; sourceTree = "<group>"; };
+		5D12641323679C6B00A7E5B7 /* Gardirobum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gardirobum.swift; sourceTree = "<group>"; };
+		5D1264152367A07C00A7E5B7 /* KombinYorumlat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KombinYorumlat.swift; sourceTree = "<group>"; };
 		5D615133235B35EF0011609A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5E75EACF4A5588D9122DE90B /* Pods-FashionLinev1-0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionLinev1-0.debug.xcconfig"; path = "Target Support Files/Pods-FashionLinev1-0/Pods-FashionLinev1-0.debug.xcconfig"; sourceTree = "<group>"; };
 		8664F4C40B8DCDE8D9666D47 /* Pods_FashionLinev1_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionLinev1_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +76,10 @@
 				5D0897DD234CD95A0036CC9A /* AppDelegate.swift */,
 				5D0897DF234CD95A0036CC9A /* SceneDelegate.swift */,
 				5D0897E1234CD95A0036CC9A /* ViewController.swift */,
+				5D12640F236796A400A7E5B7 /* SignUpViewController.swift */,
+				5D12641123679C1F00A7E5B7 /* KombinOlustur.swift */,
+				5D12641323679C6B00A7E5B7 /* Gardirobum.swift */,
+				5D1264152367A07C00A7E5B7 /* KombinYorumlat.swift */,
 				5D0897E3234CD95A0036CC9A /* Main.storyboard */,
 				5D0897E6234CD95B0036CC9A /* Assets.xcassets */,
 				5D0897E8234CD95B0036CC9A /* LaunchScreen.storyboard */,
@@ -83,7 +95,6 @@
 				5E75EACF4A5588D9122DE90B /* Pods-FashionLinev1-0.debug.xcconfig */,
 				428168509D0C167D59E9283F /* Pods-FashionLinev1-0.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,9 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D12641223679C1F00A7E5B7 /* KombinOlustur.swift in Sources */,
 				5D0897E2234CD95A0036CC9A /* ViewController.swift in Sources */,
 				5D0897DE234CD95A0036CC9A /* AppDelegate.swift in Sources */,
+				5D1264162367A07C00A7E5B7 /* KombinYorumlat.swift in Sources */,
+				5D126410236796A400A7E5B7 /* SignUpViewController.swift in Sources */,
 				5D0897E0234CD95A0036CC9A /* SceneDelegate.swift in Sources */,
+				5D12641423679C6B00A7E5B7 /* Gardirobum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

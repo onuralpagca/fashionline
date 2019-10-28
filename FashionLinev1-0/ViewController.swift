@@ -33,6 +33,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         //IMAGEVIEW TIKLANABİLİR YAPIYORUZ----
         
     }
+    
+    @IBAction func kombinOlusturClicked(_ sender: Any) {
+        performSegue(withIdentifier: "toKombinYorumlat", sender: nil)
+    }
+    
+    //PORFİL BUTONUNA TIKLANINCA
+    @IBAction func profileButtonClicked(_ sender: Any) {
+        
+        
+        performSegue(withIdentifier: "toSignUpViewController", sender: nil)
+    }
+    
 
     @objc func chooseImage(){
         
@@ -86,11 +98,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                     if error == nil{
                         
                         let imageUrl = url?.absoluteString
-                        print(imageUrl)
+                        print(imageUrl!)
                         
                         
-                    }
                     
+                        }
                     }
                 }
             }
